@@ -24,7 +24,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, device/xiaomi/agate/device.mk)
 
 # Inherit some source stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
+
+#XDROID
+XDROID_BOOT_DARK := true
+XDROID_BOOT := 1080
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -43,4 +47,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=agate \
     PRODUCT_NAME=agate
 
-BUILD_FINGERPRINT := Xiaomi/amber_eea/amber:12/SP1A.210812.016/V13.0.7.0.SKWEUXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/amber_eea/amber:12/SP1A.210812.016/V13.0.8.0.SKWEUXM:user/release-keys
