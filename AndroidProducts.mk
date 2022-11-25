@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_agate.mk
+    $(LOCAL_DIR)/xdroid_agate.mk
+
+COMMON_LUNCH_CHOICES := \
+    xdroid_agate-user \
+    xdroid_agate-userdebug \
+    xdroid_agate-eng
