@@ -24,7 +24,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, device/xiaomi/agate/device.mk)
 
 # Inherit some source stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/xd/config/common.mk)
 
 #XDROID
 XDROID_BOOT_DARK := true
